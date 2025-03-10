@@ -13,11 +13,11 @@ At the heart of it all is this GitHub repository, where you’ll collaborate wit
 
 Here’s a quick rundown of what you’ll be doing:
 
-1. **Introduce Yourself:** Start by introducing yourself to the batch and mentors in GitHub discussion.
+1. **Introduce Yourself:** Start by introducing yourself to the batch and mentors in [GitHub discussion](https://github.com/BuidlGuidl/batch14.buidlguidl.com/discussions/10).
 2. **Complete [Issue #a](https://github.com/BuidlGuidl/batch14.buidlguidl.com/issues/9):** 'Check in' to our smart contract by writing one of your own.
 3. **Move to [Issue #b](https://github.com/BuidlGuidl/batch14.buidlguidl.com/issues/8):** Create a personal page and submit it to the batch repository via a pull request (PR).
-4. **Choose Open Issues:** After completing the initial tasks, explore and pick other open issues to work on—either individually or by collaborating with other batch members.
-5. **Graduate Successfully:** To graduate and mint the Graduation NFT (#9), you must complete [Issue #a](https://github.com/BuidlGuidl/batch14.buidlguidl.com/issues/9), [Issue #b](https://github.com/BuidlGuidl/batch14.buidlguidl.com/issues/8) and gives your best effort in solving other issues.
+4. **Choose Open Issues:** Once your pull request has been merged, explore and pick other open issues to work on—either individually or by collaborating with other batch members.
+5. **Graduate Successfully:** To graduate and mint the Graduation NFT (#9), you must complete [Issue #a](https://github.com/BuidlGuidl/batch14.buidlguidl.com/issues/9), [Issue #b](https://github.com/BuidlGuidl/batch14.buidlguidl.com/issues/8), and give your best effort in solving other issues. The graduation announcement will be made in the Telegram group, so wait for it before attempting to graduate.
 
 We aim to empower you with the skills of dApp development and collaborating with other developers. Remember, we’ll be with you every step of the way. Let’s build something amazing together!
 
