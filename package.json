@@ -51,10 +51,17 @@
   },
   "packageManager": "yarn@3.2.3",
   "devDependencies": {
+    "@types/chai": "^5",
     "husky": "^9.1.6",
     "lint-staged": "^15.2.10"
   },
   "engines": {
     "node": ">=20.18.3"
+  },
+  "dependencies": {
+    "chai": "^5.2.0",
+    "hardhat": "^2.22.19",
+    "lucide-react": "^0.482.0",
+    "mocha": "^11.1.0"
   }
 }
