@@ -1,16 +1,13 @@
 "use client";
 
-import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import type { NextPage } from "next";
 import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 import { Address } from "~~/components/scaffold-eth";
 
-const BuilderProfile: NextPage = () => {
+const KrishnaSinghProfile: NextPage = () => {
   const address = "0xC4Aad525854Cc8d21122Bee8CcC1d9c3cEcBb859";
-  // const shortenedAddress = address?.slice(0, 6) + "..." + address?.slice(-4);
-  const [imageError, setImageError] = useState(false);
 
   return (
     <div className="flex items-center flex-col flex-grow pt-2 px-4">
@@ -18,21 +15,14 @@ const BuilderProfile: NextPage = () => {
         <div className="p-6 pt-8 relative">
           <div className="flex flex-col md:flex-row items-center gap-6">
             <div className="relative w-24 h-24 rounded-full overflow-hidden border-4 border-base-100 bg-base-100">
-              {imageError ? (
-                <div className="w-full h-full bg-base-300 flex items-center justify-center text-xl font-bold">
-                  <span className="text-2xl">KS</span>
-                </div>
-              ) : (
-                <Image
-                  src="/krishna-profile.png"
-                  alt="Krishna Singh"
-                  fill
-                  sizes="96px"
-                  className="object-cover"
-                  priority
-                  onError={() => setImageError(true)}
-                />
-              )}
+              <Image
+                src="/krishna-profile.png"
+                alt="Krishna Singh"
+                fill
+                sizes="96px"
+                className="object-cover"
+                priority
+              />
             </div>
 
             <div className="flex-1">
@@ -97,4 +87,4 @@ const BuilderProfile: NextPage = () => {
   );
 };
 
-export default BuilderProfile;
+export default KrishnaSinghProfile;
