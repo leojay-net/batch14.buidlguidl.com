@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { Address } from "~~/components/scaffold-eth";
 
-export default function BuilderProfile() {
+export default function HuilenProfile() {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen py-2">
       <div className="container mx-auto px-4 py-8">
