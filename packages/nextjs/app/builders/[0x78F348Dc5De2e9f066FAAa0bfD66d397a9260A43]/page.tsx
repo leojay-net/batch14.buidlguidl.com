@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { NextPage } from "next";
 import { FaGithub, FaXTwitter } from "react-icons/fa6";
 import { EnvelopeIcon, MapPinIcon } from "@heroicons/react/24/outline";
 
@@ -7,9 +8,9 @@ const socialLinks = [
   { icon: <FaXTwitter className="h-6 w-6" />, url: "https://x.com/11cyth", name: "Twitter" },
 ];
 
-const SandsPage = () => {
+const SandsPage: NextPage = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-gray-50 to-gray-200 py-20 px-4 dark:from-sky-600">
+    <div className="min-h-screen bg-gradient-to-b from-gray-50 to-gray-200 py-20 px-4 dark:from-sky-700">
       <div className="max-w-2xl mx-auto">
         {/* Profile Section */}
         <div className="text-center mb-16">
