@@ -1,8 +1,9 @@
 import Image from "next/image";
 import { Address } from "../../../components/scaffold-eth/Address/Address";
+import { NextPage } from "next";
 import { FaGithub } from "react-icons/fa";
 
-export default function EnriqueProfile() {
+const EnriqueProfile: NextPage = () => {
   const address = "0xd22BFCA3DAb60c1a11b2f1d7C8e2CBa063716A38";
   const githubUrl = "https://github.com/0xSl0th";
 
@@ -55,4 +56,6 @@ export default function EnriqueProfile() {
       </div>
     </div>
   );
-}
+};
+
+export default EnriqueProfile;
