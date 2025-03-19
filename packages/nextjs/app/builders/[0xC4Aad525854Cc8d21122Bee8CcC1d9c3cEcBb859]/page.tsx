@@ -4,9 +4,27 @@ import type { NextPage } from "next";
 import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 import { Address } from "~~/components/scaffold-eth";
 
-const KrishnaSinghProfile: NextPage = () => {
-  const address = "0xC4Aad525854Cc8d21122Bee8CcC1d9c3cEcBb859";
+const address = "0xC4Aad525854Cc8d21122Bee8CcC1d9c3cEcBb859";
 
+const socialLinks = [
+  {
+    href: "https://github.com/100x-Dev",
+    icon: FaGithub,
+    ariaLabel: "GitHub",
+  },
+  {
+    href: "https://twitter.com/100_xDEV",
+    icon: FaTwitter,
+    ariaLabel: "Twitter",
+  },
+  {
+    href: "https://linkedin.com/in/krishna-s-84062926b/",
+    icon: FaLinkedin,
+    ariaLabel: "LinkedIn",
+  },
+];
+
+const KrishnaSinghProfile: NextPage = () => {
   return (
     <div className="flex items-center flex-col flex-grow pt-2 px-4">
       <div className="max-w-2xl w-full bg-base-100 rounded-xl shadow-md overflow-hidden my-6">
@@ -37,27 +55,17 @@ const KrishnaSinghProfile: NextPage = () => {
               </p>
 
               <div className="flex gap-3">
-                <Link
-                  href="https://github.com/100x-Dev"
-                  target="_blank"
-                  className="btn btn-circle btn-sm transition-all duration-300 ease-in-out transform hover:scale-110 hover:shadow-md bg-gradient-to-r hover:from-blue-500 hover:to-purple-600 hover:border-transparent hover:text-white"
-                >
-                  <FaGithub size={18} />
-                </Link>
-                <Link
-                  href="https://twitter.com/100_xDEV"
-                  target="_blank"
-                  className="btn btn-circle btn-sm transition-all duration-300 ease-in-out transform hover:scale-110 hover:shadow-md bg-gradient-to-r hover:from-blue-500 hover:to-purple-600 hover:border-transparent hover:text-white"
-                >
-                  <FaTwitter size={18} />
-                </Link>
-                <Link
-                  href="https://linkedin.com/in/krishna-s-84062926b/"
-                  target="_blank"
-                  className="btn btn-circle btn-sm transition-all duration-300 ease-in-out transform hover:scale-110 hover:shadow-md bg-gradient-to-r hover:from-blue-500 hover:to-purple-600 hover:border-transparent hover:text-white"
-                >
-                  <FaLinkedin size={18} />
-                </Link>
+                {socialLinks.map((link, index) => (
+                  <Link
+                    key={index}
+                    href={link.href}
+                    target="_blank"
+                    aria-label={link.ariaLabel}
+                    className="btn btn-circle btn-sm transition-all duration-300 ease-in-out transform hover:scale-110 hover:shadow-md bg-gradient-to-r hover:from-blue-500 hover:to-purple-600 hover:border-transparent hover:text-white"
+                  >
+                    <link.icon size={18} />
+                  </Link>
+                ))}
               </div>
             </div>
           </div>
