@@ -1,17 +1,15 @@
-"use client";
-
 import Image from "next/image";
 import { FaGithub, FaXTwitter } from "react-icons/fa6";
 import { EnvelopeIcon, MapPinIcon } from "@heroicons/react/24/outline";
 
-const SandsPage = () => {
-  const socialLinks = [
-    { icon: <FaGithub className="h-6 w-6" />, url: "https://github.com/Tejas-Sands", name: "GitHub" },
-    { icon: <FaXTwitter className="h-6 w-6" />, url: "https://x.com/11cyth", name: "Twitter" },
-  ];
+const socialLinks = [
+  { icon: <FaGithub className="h-6 w-6" />, url: "https://github.com/Tejas-Sands", name: "GitHub" },
+  { icon: <FaXTwitter className="h-6 w-6" />, url: "https://x.com/11cyth", name: "Twitter" },
+];
 
+const SandsPage = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-gray-50 to-gray-100 py-20 px-4">
+    <div className="min-h-screen bg-gradient-to-b from-gray-50 to-gray-200 py-20 px-4 dark:from-sky-600">
       <div className="max-w-2xl mx-auto">
         {/* Profile Section */}
         <div className="text-center mb-16">
@@ -25,32 +23,31 @@ const SandsPage = () => {
               className="relative rounded-full w-full h-full object-cover border-4 border-white shadow-xl transition-transform duration-300 hover:scale-105"
             />
           </div>
-          <h1 className="text-4xl font-bold text-gray-900 mb-2 font-serif">Tejas Sandwar</h1>
-          <p className="text-xl text-gray-600 mb-6">
-            {" "}
+          <h1 className="text-4xl font-bold text-gray-900 mb-2 font-serif dark:text-blue-300">Tejas Sandwar</h1>
+          <p className="text-xl text-gray-600 mb-6 dark:text-blue-300">
             currently learning and experimenting with Hardhat, Ethers.js, and Next.js to create full-stack Web3
             applications.
           </p>
         </div>
 
         {/* Contact Section */}
-        <div className="bg-white rounded-2xl shadow-sm p-8 mb-12">
+        <div className="bg-white rounded-2xl shadow-sm p-8 mb-12 dark:bg-cyan-950">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="flex flex-col items-center text-center p-6 hover:bg-gray-50 rounded-xl transition-colors">
               <EnvelopeIcon className="h-8 w-8 text-blue-600 mb-4" />
-              <h3 className="text-sm font-semibold text-gray-500 mb-1">Email</h3>
-              <p className="text-gray-700">tsandwar@gmail.com</p>
+              <h3 className="text-sm font-semibold text-gray-500 mb-1 dark:text-sky-500">Email</h3>
+              <p className="text-gray-700 dark:text-sky-600">tsandwar@gmail.com</p>
             </div>
             <div className="flex flex-col items-center text-center p-6 hover:bg-gray-50 rounded-xl transition-colors">
               <MapPinIcon className="h-8 w-8 text-blue-600 mb-4" />
-              <h3 className="text-sm font-semibold text-gray-500 mb-1">Location</h3>
-              <p className="text-gray-700">Jharkhand, India</p>
+              <h3 className="text-sm font-semibold text-gray-500 mb-1 dark:text-sky-500">Location</h3>
+              <p className="text-gray-700 dark:text-sky-600">Jharkhand, India</p>
             </div>
           </div>
         </div>
 
         {/* Bio Section */}
-        <div className="prose prose-lg text-gray-600 mx-auto mb-16">
+        <div className="prose prose-lg text-gray-600 mx-auto mb-16  dark:text-blue-400">
           <p className="text-center leading-relaxed">
             I am skilled in Next.js and backend development, now transitioning into Web3 to build decentralized
             applications. Currently, I am learning Solidity, smart contracts, and blockchain integrations to expand my
@@ -65,6 +62,8 @@ const SandsPage = () => {
             <a
               key={index}
               href={link.url}
+              target="_blank"
+              rel="noopener noreferrer"
               className="p-3 rounded-full bg-white shadow-sm hover:shadow-md text-gray-500 hover:text-blue-600 transition-all duration-300"
             >
               <span className="sr-only">{link.name}</span>
