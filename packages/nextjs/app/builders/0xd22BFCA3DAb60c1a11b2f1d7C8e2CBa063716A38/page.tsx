@@ -3,10 +3,10 @@ import { Address } from "../../../components/scaffold-eth/Address/Address";
 import { NextPage } from "next";
 import { FaGithub } from "react-icons/fa";
 
-const EnriqueProfile: NextPage = () => {
-  const address = "0xd22BFCA3DAb60c1a11b2f1d7C8e2CBa063716A38";
-  const githubUrl = "https://github.com/0xSl0th";
+const address = "0xd22BFCA3DAb60c1a11b2f1d7C8e2CBa063716A38";
+const githubUrl = "https://github.com/0xSl0th";
 
+const EnriqueProfile: NextPage = () => {
   return (
     <div className="max-w-[600px] mx-auto p-5 font-sans text-center dark:text-white text-gray-800">
       <h1 className="mb-5 text-3xl dark:text-white text-gray-800">My BuidlGuidl Profile: 0xsl0th</h1>
