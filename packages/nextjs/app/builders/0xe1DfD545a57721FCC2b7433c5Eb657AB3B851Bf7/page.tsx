@@ -1,7 +1,38 @@
 import Image from "next/image";
+import type { NextPage } from "next";
 import { Address } from "~~/components/scaffold-eth";
 
-export default function HuilenProfile() {
+const HuilenProfile: NextPage = () => {
+  const size = { width: 32, height: 32 };
+
+  const iconStyle = "w-8 h-8";
+
+  const anchorStyle = "text-2xl hover:scale-110 transition-all duration-300";
+
+  const icons = [
+    {
+      anchorUrl: "https://github.com/huilenc",
+      anchorStyle,
+      iconUrl: "https://api.iconify.design/tabler:brand-github.svg",
+      iconAlt: "Github",
+      iconStyle,
+    },
+    {
+      anchorUrl: "https://x.com/huicanu",
+      anchorStyle,
+      iconUrl: "https://api.iconify.design/tabler:brand-x.svg",
+      iconAlt: "x",
+      iconStyle,
+    },
+    {
+      anchorUrl: "https://linkedin.com/in/huilenc",
+      anchorStyle,
+      iconUrl: "https://api.iconify.design/tabler:brand-linkedin.svg",
+      iconAlt: "linkedin",
+      iconStyle,
+    },
+  ];
+
   return (
     <div className="flex flex-col items-center justify-center min-h-screen py-2">
       <div className="container mx-auto px-4 py-8">
@@ -15,7 +46,7 @@ export default function HuilenProfile() {
               height={128}
             />
 
-            <h1 className="text-4xl font-bold">Huilén</h1>
+            <h1 className="text-4xl font-bold">Huilén Canullán</h1>
 
             <Address address="0xe1DfD545a57721FCC2b7433c5Eb657AB3B851Bf7" />
 
@@ -26,52 +57,31 @@ export default function HuilenProfile() {
             </p>
 
             <div className="flex space-x-4">
-              <a
-                href="https://github.com/huilenc"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-2xl hover:scale-110 transition-all duration-300"
-              >
-                <Image
-                  src="https://api.iconify.design/tabler:brand-github.svg"
-                  alt="Github"
-                  width={32}
-                  height={32}
-                  className="w-8 h-8"
-                />
-              </a>
-              <a
-                href="https://x.com/huicanu"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-2xl hover:scale-110 transition-all duration-300"
-              >
-                <Image
-                  src="https://api.iconify.design/tabler:brand-x.svg"
-                  alt="x"
-                  width={32}
-                  height={32}
-                  className="w-8 h-8"
-                />
-              </a>
-              <a
-                href="https://linkedin.com/in/huilenc"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-2xl hover:scale-110 transition-all duration-300"
-              >
-                <Image
-                  src="https://api.iconify.design/tabler:brand-linkedin.svg"
-                  alt="linkedin"
-                  width={32}
-                  height={32}
-                  className="w-8 h-8"
-                />
-              </a>
+              {icons.map(icon => {
+                return (
+                  <a
+                    href={icon.anchorUrl}
+                    key={icon.iconAlt}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={icon.anchorStyle}
+                  >
+                    <Image
+                      src={icon.iconUrl}
+                      alt={icon.iconAlt}
+                      width={size.width}
+                      height={size.height}
+                      className={icon.iconStyle}
+                    />
+                  </a>
+                );
+              })}
             </div>
           </div>
         </div>
       </div>
     </div>
   );
-}
+};
+
+export default HuilenProfile;
