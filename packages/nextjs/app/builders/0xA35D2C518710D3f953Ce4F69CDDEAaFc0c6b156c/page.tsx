@@ -7,7 +7,7 @@ import { Address } from "~~/components/scaffold-eth";
 const name = "Joseph Aleonomoh";
 const nickname = "LEO";
 const description =
-  "Hello! I’m a dedicated blockchain and AI enthusiast with a strong interest in decentralized technologies and their applications. My experience includes working on DeFi projects, developing smart contracts, and exploring AI-driven solutions. I’m passionate about continuous learning and collaboration, and I’m always excited to connect with others who share my interests. If you’d like to discuss ideas, collaborate on projects, or simply exchange knowledge, I’d love to hear from you!";
+  "Hello! I am a dedicated blockchain and AI enthusiast with a strong interest in decentralized technologies and their applications. My experience includes working on DeFi projects, developing smart contracts, and exploring AI-driven solutions. I’m passionate about continuous learning and collaboration, and I’m always excited to connect with others who share my interests. If you’d like to discuss ideas, collaborate on projects, or simply exchange knowledge, I’d love to hear from you!";
 const walletAddress = "0xA35D2C518710D3f953Ce4F69CDDEAaFc0c6b156c";
 const avatarUrl =
   "https://static.vecteezy.com/system/resources/previews/002/469/825/non_2x/black-and-white-line-art-of-the-front-of-the-lion-head-it-is-sign-of-leo-zodiac-good-use-for-symbol-mascot-icon-avatar-tattoo-t-shirt-design-logo-or-any-design-free-vector.jpg";
